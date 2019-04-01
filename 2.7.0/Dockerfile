@@ -4,7 +4,7 @@ MAINTAINER Jonas Bonno Mikkelsen (https://github.com/JonasBonno)
 
 # Updating container
 RUN apt-get update && \
-	apt-get install apt-utils && \
+	apt-get install apt-utils --yes && \
 	apt-get upgrade --yes --allow-remove-essential && \
 	apt-get clean && \
 	rm -rf /var/lib/apt/lists/*
