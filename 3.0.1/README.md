@@ -38,7 +38,4 @@ To access the console:
 The first time the server starts it creates the server.properties file with default settings and spawns "world". 
 Not recommended to change these settings be hand.
 
-When upgrading: (NOTE: World reset is required when upgrading from v1/v2 to this v3.0.1.)
-To upgrade delete ftb-revelation server and start new ftb-revelation server with --volumes-from [name of your data container].
-Settings will reset when upgrading.
-Access the console to op and whitelist.
+When upgrading: World reset is required when upgrading from v1/v2 to this v3.0.1
