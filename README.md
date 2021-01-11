@@ -6,7 +6,7 @@ Modpack for Minecraft 1.12.2.
 Revelation is a general all-purpose pack that is designed for solo play as well as small and medium population servers.
 This pack contains a mix of magic, tech and exploration mods, and is the largest pack ever built and released by the Feed The Beast Team.
 
-<img src="https://media-elerium.cursecdn.com/avatars/134/670/636493650464216291.png" width="338" height="338">
+<img src="https://apps.modpacks.ch/modpacks/art/7/revelation.png" width="338" height="338">
 
 NOTE: In compliance with Mojang "End User License Agreement", you will need to agree to the EULA in order to run your own Minecraft server. By using this container you acknowledge the EULA! If you do not agree, then you are not permitted to use this container!
 https://account.mojang.com/documents/minecraft_eula
