@@ -36,6 +36,6 @@ To access the console:
 </br>To exit: CTRL+P CTRL+Q
 
 The first time the server starts it creates the server.properties file with default settings and spawns "world". 
-Not recommended to change these settings be hand.
+Not recommended to change these settings by hand.
 
 When upgrading: World reset is required when upgrading from v1/v2 to v3.0.1 or higher.
