@@ -21,7 +21,7 @@ RUN useradd -m -U minecraft && \
   wget --no-check-certificate https://api.modpacks.ch/public/modpack/35/143/server/linux -O serverinstall_35_143 && \
   chmod u+x serverinstall_35_143 && \
   echo "y" | ./serverinstall_35_143 && \
-  rm serverinstall && \
+  rm serverinstall_35_143 && \
 	echo "#By changing the setting below to TRUE you are indicating your agreement to our EULA (https://account.mojang.com/documents/minecraft_eula)." > eula.txt && \
 	echo "$(date)" >> eula.txt && \
 	echo "eula=TRUE" >> eula.txt && \
