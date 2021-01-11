@@ -12,20 +12,19 @@ RUN apt-get update && \
 # Setting workdir
 WORKDIR /minecraft
 
-# Changing user to root
-USER root
-
 # Creating user and downloading files
 RUN useradd -m -U minecraft && \
 	mkdir -p /minecraft/world && \
-  wget --no-check-certificate https://api.modpacks.ch/public/modpack/35/143/server/linux -O serverinstall_35_143 && \
-  chmod u+x serverinstall_35_143 && \
-  echo "y" | ./serverinstall_35_143 && \
-  rm serverinstall_35_143 && \
+	wget --no-check-certificate https://api.modpacks.ch/public/modpack/35/143/server/linux -O serverinstall_35_143 && \
+	chmod u+x serverinstall_35_143 && \
+	echo "y" | ./serverinstall_35_143 && \
+	rm serverinstall_35_143 && \
 	echo "#By changing the setting below to TRUE you are indicating your agreement to our EULA (https://account.mojang.com/documents/minecraft_eula)." > eula.txt && \
 	echo "$(date)" >> eula.txt && \
 	echo "eula=TRUE" >> eula.txt && \
 	chown -R minecraft:minecraft /minecraft
+
+# Changing user to minecraft
 USER minecraft
 
 # Expose port 25565
