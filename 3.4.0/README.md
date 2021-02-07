@@ -13,9 +13,6 @@ This pack contains a mix of magic, tech and exploration mods, and is the largest
 NOTE: In compliance with Mojang "End User License Agreement", you will need to agree to the EULA in order to run your own Minecraft server. By using this container you acknowledge the EULA! If you do not agree, then you are not permitted to use this container!
 https://account.mojang.com/documents/minecraft_eula
 
-This Dockerfile will always download latest build of Feed The Beast Revelation when building.
-The releases on hub.docker.com are build when a new stable release is available from Feed The Beast.
-
 The worldname must be the default "world". 
 Settings will reset when upgrading.
 Access the console to op and whitelist.
@@ -24,7 +21,7 @@ Running ftb-revelation data container:
 docker run --name [name of your data container] jonasbonno/ftb-revelation:3.4.0 echo 'Data-only container'
 
 Running ftb-revelation server:
-docker run --tty=true --interactive=true --detach=true --name=[name of your container] --volumes-from [name of your data container] --publish=[port on your host]:25565 jonasbonno/ftb-revelation:3.4.0
+docker run --tty=true --interactive=true --detach=true --name [name of your container] --volumes-from [name of your data container] --publish=[port on your host]:25565 jonasbonno/ftb-revelation:3.4.0
 
 When upgrading sometime items have been remove and therefor you have to confirm removal. </br>
 To do so run "docker attach [name of your container]" and type "/fml confirm" when prompted to confirm or cancel. </br>
