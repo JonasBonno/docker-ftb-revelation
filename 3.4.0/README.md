@@ -38,7 +38,7 @@ Tips:
 </br>Download file: <code>docker cp [name of your container]:/minecraft/options.txt .</code>
 </br>Upload file: <code>docker cp options.txt [name of your container]:/minecraft/options.txt</code>
 </br>Say Hi!: <code>echo "say Hi!" | socat EXEC:"docker attach [name of your container]",pty STDIN</code>
-</br>Say CPU and RAM usage: <code>echo "say $(docker stats [name of your container] --no-stream --format "table CPU: {{.CPUPerc}} RAM: {{.MemPerc}}" | sed -n -e 2p)" | socat EXEC:"docker attach [name of your container]",pty STDIN;</code>
+</br>Say CPU and RAM usage: <code>echo "say $(docker stats [name of your container] --no-stream --format "table CPU: {{.CPUPerc}} RAM: {{.MemPerc}}" | sed -n -e 2p)" | socat EXEC:"docker attach [name of your container]",pty STDIN</code>
 
 The first time the server starts it creates the server.properties file with default settings and spawns "world". 
 Not recommended to change these settings by hand.
