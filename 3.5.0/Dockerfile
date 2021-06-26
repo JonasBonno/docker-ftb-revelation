@@ -15,17 +15,14 @@ WORKDIR /minecraft
 # Creating user and downloading files
 RUN useradd -m -U minecraft && \
 	mkdir -p /minecraft/world && \
-	wget --no-check-certificate https://api.modpacks.ch/public/modpack/35/2059/server/linux -O serverinstall_35_2059 && \
+	wget --no-check-certificate https://api.modpacks.ch/public/modpack/80/2059/server/linux -O serverinstall_80_2059 && \
 	chmod u+x serverinstall_* && \
-	echo "y" | ./serverinstall_* && \
+	./serverinstall_* --auto && \
 	rm serverinstall_* && \
 	echo "#By changing the setting below to TRUE you are indicating your agreement to our EULA (https://account.mojang.com/documents/minecraft_eula)." > eula.txt && \
 	echo "$(date)" >> eula.txt && \
-	echo "eula=TRUE" >> eula.txt && \
+	echo "eula=true" >> eula.txt && \
 	chown -R minecraft:minecraft /minecraft
-	
-# Removing faulty EULA check
-RUN sed -i '2,6d' /minecraft/start.sh
 
 # Changing user to minecraft
 USER minecraft
