@@ -4,7 +4,7 @@ made by Feed The Beast at https://feed-the-beast.com
 
 NOTE: World reset is required when upgrading from v1/v2 to v3.0.1 or higher.
 
-Modpack for Minecraft 1.12.2.
+Modpack for Minecraft 1.12.2 with Log4j CVE-2021-44228 vulnerability mitigation.</br>
 Revelation is a general all-purpose pack that is designed for solo play as well as small and medium population servers.
 This pack contains a mix of magic, tech and exploration mods, and is the largest pack ever built and released by the Feed The Beast Team.
 
