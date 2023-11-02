@@ -1,4 +1,4 @@
-# ftb-revelation - latest
+# ftb-revelation
 Feed The Beast Revelation modpack
 made by Feed The Beast at https://feed-the-beast.com
 
